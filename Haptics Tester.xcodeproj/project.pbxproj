@@ -14,6 +14,7 @@
 		6A52C735238F30380040748A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A52C734238F30380040748A /* Assets.xcassets */; };
 		6A52C738238F30380040748A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A52C736238F30380040748A /* LaunchScreen.storyboard */; };
 		6A52C73B238F30380040748A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A52C73A238F30380040748A /* main.m */; };
+		6A52C743238F30700040748A /* HapticsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A52C742238F30700040748A /* HapticsManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		6A52C737238F30380040748A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A52C739238F30380040748A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A52C73A238F30380040748A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6A52C741238F30700040748A /* HapticsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HapticsManager.h; sourceTree = "<group>"; };
+		6A52C742238F30700040748A /* HapticsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HapticsManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +64,37 @@
 		6A52C727238F30360040748A /* Haptics Tester */ = {
 			isa = PBXGroup;
 			children = (
-				6A52C728238F30360040748A /* AppDelegate.h */,
-				6A52C729238F30360040748A /* AppDelegate.m */,
-				6A52C72B238F30360040748A /* SceneDelegate.h */,
-				6A52C72C238F30360040748A /* SceneDelegate.m */,
+				6A52C745238F30FF0040748A /* AppDel */,
+				6A52C744238F30F60040748A /* Scene */,
+				6A52C731238F30360040748A /* Main.storyboard */,
 				6A52C72E238F30360040748A /* ViewController.h */,
 				6A52C72F238F30360040748A /* ViewController.m */,
-				6A52C731238F30360040748A /* Main.storyboard */,
+				6A52C741238F30700040748A /* HapticsManager.h */,
+				6A52C742238F30700040748A /* HapticsManager.m */,
 				6A52C734238F30380040748A /* Assets.xcassets */,
-				6A52C736238F30380040748A /* LaunchScreen.storyboard */,
 				6A52C739238F30380040748A /* Info.plist */,
+				6A52C736238F30380040748A /* LaunchScreen.storyboard */,
 				6A52C73A238F30380040748A /* main.m */,
 			);
 			path = "Haptics Tester";
+			sourceTree = "<group>";
+		};
+		6A52C744238F30F60040748A /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				6A52C72B238F30360040748A /* SceneDelegate.h */,
+				6A52C72C238F30360040748A /* SceneDelegate.m */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		6A52C745238F30FF0040748A /* AppDel */ = {
+			isa = PBXGroup;
+			children = (
+				6A52C728238F30360040748A /* AppDelegate.h */,
+				6A52C729238F30360040748A /* AppDelegate.m */,
+			);
+			path = AppDel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A52C730238F30360040748A /* ViewController.m in Sources */,
+				6A52C743238F30700040748A /* HapticsManager.m in Sources */,
 				6A52C72A238F30360040748A /* AppDelegate.m in Sources */,
 				6A52C73B238F30380040748A /* main.m in Sources */,
 				6A52C72D238F30360040748A /* SceneDelegate.m in Sources */,
@@ -292,6 +314,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T6MXF72738;
 				INFOPLIST_FILE = "Haptics Tester/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +332,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T6MXF72738;
 				INFOPLIST_FILE = "Haptics Tester/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
